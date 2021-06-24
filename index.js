@@ -11,13 +11,16 @@ class Timer {
   start = () => {
     this.tick();
     this.interval = setInterval(this.tick, 1000);
-    console.log(this.interval);
   };
 
   tick = () => {
-    console.log('tick tick');
+    if (this.durationInput.value <= 0) {
+      this.pause;
+    } else {
+      const timeRemaining = parseFloat(this.durationInput.value);
+      this.durationInput.value = timeRemaining - 1;
+    }
   };
-
   pause = () => {
     clearInterval(this.interval);
   };
