@@ -1,3 +1,5 @@
+# Animated Countdown Timer
+
 A countdown timer is a virtual clock running on a landing page. And it counts down from a certain time to
 indicate the beginning (or the end) of an event.
 
